@@ -36,6 +36,9 @@
 *.x86_64
 *.hex
 
+fgets
+getline
+
 # Debug files
 *.dSYM/
 *.su
