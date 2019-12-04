@@ -9,6 +9,9 @@ int main() {
     size_t bufsize = 5;
     size_t characters;
     char *p;
+    char *ptr;
+    int numa;
+    int nums;
 
     buffer = (char *)malloc(bufsize * sizeof(char));
     if (buffer == NULL) {
@@ -27,6 +30,13 @@ int main() {
             *p = '\0';
 
         printf("And now it's >%s<\n", buffer);
+
+        numa = atoi(buffer);
+        printf("num using atoi is >%d<\n", numa);
+
+        nums = strtol(buffer, &ptr, 10);
+        printf("num using strtol is >%d<\n", nums);
+        printf("String part is >%s<\n", ptr);
     }
 
     free(buffer);

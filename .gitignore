@@ -1,3 +1,5 @@
+*.swp
+
 # Prerequisites
 *.d
 
@@ -38,6 +40,7 @@
 
 fgets
 getline
+strtol
 
 # Debug files
 *.dSYM/
